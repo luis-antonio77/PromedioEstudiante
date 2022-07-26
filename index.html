@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio de Estudiantes</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+
+    <div class='container mt-4 shadow-lg p-3'>
+        <div class="container">
+          <!--Formulario-->
+          <form id='formulario'>
+            <div class='mb-3'>
+              <label for='nombreE'>Nombre del estudiante</label>
+              <input type='text' class='form-control' style='width: 329px'
+                placeholder='Escriba nombre del estudiante' id='nombreE'/>
+            </div>
+            <div class='mb-3'>
+              <label for='notaM'>Nota de matematicas</label>
+              <input type='number' class='form-control' style='width: 329px' 
+                placeholder='Escriba nota de matematicas' id='notaM'/>
+            </div>
+            <div class='mb-3'>
+                <label for='notaS'>Nota de sociales</label>
+                <input type='number' class='form-control' style='width: 329px'
+                  placeholder='Escriba nota de sociales' id='notaS'/>
+              </div>
+          </form>
+  
+          <!--Botones-->
+          <button class='btn btn-primary mb-3' onclick='calcular()'>Calcular Promedio</button>
+           
+          <!--Mostrar Resultado-->
+          <div class="card-body">
+            <p id='resultado' class="card-text"></p>
+          </div>  
+        </div>
+    </div>  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
